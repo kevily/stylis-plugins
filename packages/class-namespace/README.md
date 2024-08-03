@@ -1,4 +1,4 @@
-# stylis-plugins-class-namespace
+# stylis-plugin-class-namespace
 
 ## Intro
 
@@ -7,12 +7,12 @@
 ## Install
 
 ```shell
-npm i stylis-plugins-class-namespace
+npm i stylis-plugin-class-namespace
 ```
 
 ## Use
 
-> import classNamespacePlugin from 'stylis-plugins-class-namespace'
+> import classNamespacePlugin from 'stylis-plugin-class-namespace'
 
 ### Before
 
