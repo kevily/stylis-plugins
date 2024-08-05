@@ -1,6 +1,6 @@
 {
     "name": "stylis-plugin-class-namespace",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "stylis-plugin-class-namespace",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
