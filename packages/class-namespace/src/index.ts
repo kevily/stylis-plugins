@@ -12,6 +12,12 @@ export default function classNamespace(options: optionsType): stylis.Middleware 
         const rootClass = Array.isArray(rootSelector.props)
             ? rootSelector.props[0]
             : rootSelector.props
+        // const isValidCssName = (str: string) => /^[.#]/.test(str)
+        // const isParentClassName = (str: string) => /\x20$/.test(str)
+        const isRootElement = (str: string) => {
+            return ['html', 'body'].some(s => str.startsWith(s))
+        }
+        if (isRootElement(rootClass)) return
         const namespace = options.namespace.replace(/&/g, rootClass)
         selectors?.forEach(selector => {
             if (Array.isArray(selector.props)) {
